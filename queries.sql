@@ -51,3 +51,16 @@ SELECT species.name,COUNT(*) FROM animals LEFT JOIN species ON animals.species_i
 SELECT animals.name FROM animals JOIN species ON animals.species_id = species.id JOIN owners ON owners_id = owners.id WHERE species.name = 'Digimon' AND full_name = 'Jennifer Orwell';
 SELECT animals.name FROM animals JOIN owners ON animals.owners_id = owners.id WHERE animals.escape_attempts = 0 AND owners.full_name = 'Dean Winchester';
 SELECT full_name, COUNT(*) FROM animals JOIN owners ON owners_id = owners.id GROUP BY full_name ORDER BY COUNT(*) DESC LIMIT 1;
+
+/*Queries that provide answers to the questions from all projects - Part 4.*/
+
+SELECT animals.name FROM animals JOIN visits ON visits.animals_id = animals.id JOIN vets ON visits.vets_id = vets.id
+WHERE vets.name = 'William Tatcher' ORDER BY visits.date DESC LIMIT 1;
+
+SELECT count(animals.name) FROM animals JOIN visits ON visits.animals_id = animals.id JOIN vets ON visits.vets_id = vets.id
+WHERE vets.name = 'Stephanie Mendez';
+
+
+
+
+
