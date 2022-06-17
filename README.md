@@ -1,7 +1,8 @@
-# curriculum-databases-projects-template
+# Relational Database Using PostgreSQL
 
-> In this project I will use a relational database to create the initial data structure for a vet clinic. I will create a table to store animals' information, insert some data into it, and query it.
+> This project uses a relational database and PostgreSQL. The database contains a data file with animals' information, the schema needed to create the table and related queries based on the diagram below:
 
+![Diagram](/drawSQL-export-2022-06-17_02_13.png)
 
 ## Getting Started
 
